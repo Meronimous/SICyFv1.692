@@ -1,0 +1,1370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\squirrel.windows.2.0.1\build\squirrel.windows.props" Condition="Exists('..\packages\squirrel.windows.2.0.1\build\squirrel.windows.props')" />
+  <Import Project="..\packages\Microsoft.CodeQuality.Analyzers.2.9.8\build\Microsoft.CodeQuality.Analyzers.props" Condition="Exists('..\packages\Microsoft.CodeQuality.Analyzers.2.9.8\build\Microsoft.CodeQuality.Analyzers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9CBF3E86-625A-453D-BFFD-B90272ED76D6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SICyF.My.MyApplication</StartupObject>
+    <RootNamespace>SICyF</RootNamespace>
+    <AssemblyName>SICyF</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>C:\CONTADURIA\SICyF\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>\\192.168.2.244\SICyF\</UpdateUrl>
+    <TargetCulture>es-AR</TargetCulture>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>693</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SICyF.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>42030,42104,42108,42109</WarningsAsErrors>
+    <DefineConstants>_PUBLISH_CHROMEDRIVER</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SICyF.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>42030,42104,42108,42109</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>Off</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\contaduria logo vect.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\..\SICyF\</OutputPath>
+    <DocumentationFile>SICyF.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+    <WarningsAsErrors>42030,42104,42108,42109</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>SICyF.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>
+    </NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <WarningsAsErrors>42030,42104,42108,42109</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>5219F4FAB0DB7B296674A07AD750D43A3E818C50</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SICyF_2_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.3.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="ClosedXML, Version=0.95.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClosedXML.0.95.3\lib\net46\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Design, Version=4.5.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Krypton.Components.Suite.4.5.9\lib\net20\ComponentFactory.Krypton.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Docking, Version=4.5.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Krypton.Components.Suite.4.5.9\lib\net20\ComponentFactory.Krypton.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Navigator, Version=4.5.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Krypton.Components.Suite.4.5.9\lib\net20\ComponentFactory.Krypton.Navigator.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Ribbon, Version=4.5.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Krypton.Components.Suite.4.5.9\lib\net20\ComponentFactory.Krypton.Ribbon.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=4.5.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Krypton.Components.Suite.4.5.9\lib\net20\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Workspace, Version=4.5.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Krypton.Components.Suite.4.5.9\lib\net20\ComponentFactory.Krypton.Workspace.dll</HintPath>
+    </Reference>
+    <Reference Include="CurrencyTextBoxControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CurrencyTextBox.1.4.3\lib\CurrencyTextBoxControl.dll</HintPath>
+    </Reference>
+    <Reference Include="DeltaCompressionDotNet, Version=1.1.0.0, Culture=neutral, PublicKeyToken=1d14d6e5194e7f4a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DeltaCompressionDotNet.1.1.0\lib\net20\DeltaCompressionDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="DeltaCompressionDotNet.MsDelta, Version=1.1.0.0, Culture=neutral, PublicKeyToken=46b2138a390abf55, processorArchitecture=MSIL">
+      <HintPath>..\packages\DeltaCompressionDotNet.1.1.0\lib\net20\DeltaCompressionDotNet.MsDelta.dll</HintPath>
+    </Reference>
+    <Reference Include="DeltaCompressionDotNet.PatchApi, Version=1.1.0.0, Culture=neutral, PublicKeyToken=3e8888ee913ed789, processorArchitecture=MSIL">
+      <HintPath>..\packages\DeltaCompressionDotNet.1.1.0\lib\net20\DeltaCompressionDotNet.PatchApi.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.9.1.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\Open-XML-SDK.2.9.1\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.0.10.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelNumberFormat.1.0.10\lib\net20\ExcelNumberFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="FastMember, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FastMember.1.5.0\lib\net461\FastMember.dll</HintPath>
+    </Reference>
+    <Reference Include="FastMember.Signed, Version=1.5.0.0, Culture=neutral, PublicKeyToken=9e8f22703bef9a29, processorArchitecture=MSIL">
+      <HintPath>..\packages\FastMember.Signed.1.5.0\lib\net461\FastMember.Signed.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.11.4.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.11.4\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ionic.Zip.1.9.1.8\lib\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.1, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.1\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.1.11\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.1.11\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Mono.Cecil, Version=0.11.2.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mono.Cecil.0.11.2\lib\net40\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Mdb, Version=0.11.2.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mono.Cecil.0.11.2\lib\net40\Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Pdb, Version=0.11.2.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mono.Cecil.0.11.2\lib\net40\Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Rocks, Version=0.11.2.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mono.Cecil.0.11.2\lib\net40\Mono.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.22.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.22\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Squirrel, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\squirrel.windows.2.0.1\lib\Net45\NuGet.Squirrel.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfiumViewer, Version=2.13.0.0, Culture=neutral, PublicKeyToken=91e4789cfb0609e0, processorArchitecture=MSIL">
+      <HintPath>..\packages\PdfiumViewer.2.13.0.0\lib\net20\PdfiumViewer.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=106.11.4.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.106.11.4\lib\net452\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SeleniumExtras.WaitHelpers, Version=3.11.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetSeleniumExtras.WaitHelpers.3.11.0\lib\net45\SeleniumExtras.WaitHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpCompress, Version=0.17.1.0, Culture=neutral, PublicKeyToken=afb0a02973931d96, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpCompress.0.17.1\lib\net45\SharpCompress.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.License, Version=1.3.8.40, Culture=neutral, PublicKeyToken=b1144360237c8b3f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.XLS.10.10.0\lib\net40\Spire.License.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf, Version=6.10.0.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.XLS.10.10.0\lib\net40\Spire.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.XLS, Version=10.10.1.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.XLS.10.10.0\lib\net40\Spire.XLS.dll</HintPath>
+    </Reference>
+    <Reference Include="Squirrel, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\squirrel.windows.2.0.1\lib\Net45\Squirrel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.FileSystem.Primitives">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Packaging, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Packaging.4.7.0\lib\net46\System.IO.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.6.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.Cryptography.Pkcs, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Pkcs.4.7.0\lib\net461\System.Security.Cryptography.Pkcs.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Forms.Ribbon">
+      <HintPath>..\packages\Ribbon_5.0_2018-03-26\Net 4.6.1\System.Windows.Forms.Ribbon.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.22\lib\net452\Ubiety.Dns.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.3.141.0\lib\net45\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.3.141.0\lib\net45\WebDriver.Support.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="Xceed.Wpf.AvalonDock, Version=3.4.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero, Version=3.4.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro, Version=3.4.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010, Version=3.4.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.DataGrid, Version=3.4.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\Xceed.Wpf.DataGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit, Version=3.4.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Zstandard.Net, Version=1.1.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.22\lib\net452\Zstandard.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing, Version=0.16.5.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.5\lib\net47\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.5.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.5\lib\net47\zxing.presentation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\AESEncriptacion.vb" />
+    <Compile Include="Clases\Controls_Sicyf.vb" />
+    <Compile Include="Clases\Cryptograph.vb" />
+    <Compile Include="Clases\CuentaBancaria.vb" />
+    <Compile Include="Clases\Expediente.vb" />
+    <Compile Include="Clases\ExtensionPdf_Sicyf.vb" />
+    <Compile Include="Clases\Factura.vb" />
+    <Compile Include="Clases\Modules\HarcodedServers.vb" />
+    <Compile Include="Clases\ServerMysql.vb" />
+    <Compile Include="Dialogos\MensajeToastie.vb" />
+    <Compile Include="Clases\Modules.vb" />
+    <Compile Include="Clases\Movimiento.vb" />
+    <Compile Include="Clases\OrdenProvision.vb" />
+    <Compile Include="Clases\PedidoFondos.vb" />
+    <Compile Include="Clases\Proveedor.vb" />
+    <Compile Include="Clases\Recibo.vb" />
+    <Compile Include="Clases\Retencion.vb" />
+    <Compile Include="Clases\ServidorMySql.vb" />
+    <Compile Include="Connected Services\AFIP.HOMO\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\Contabilidad_DialogoHaberes.Designer.vb">
+      <DependentUpon>Contabilidad_DialogoHaberes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\Contabilidad_DialogoHaberes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogos\Contabilidad_DialogoOrdenpago_multiple.Designer.vb">
+      <DependentUpon>Contabilidad_DialogoOrdenpago_multiple.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\Contabilidad_DialogoOrdenpago_multiple.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogos\Contabilidad_DialogoContratos.Designer.vb">
+      <DependentUpon>Contabilidad_DialogoContratos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\Contabilidad_DialogoContratos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles\Control_Movimiento_MFyV.Designer.vb">
+      <DependentUpon>Control_Movimiento_MFyV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Control_Movimiento_MFyV.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Generales\CUIT_Movimientos.Designer.vb">
+      <DependentUpon>CUIT_Movimientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Generales\CUIT_Movimientos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogos\Dialogo_cambiodenumero.Designer.vb">
+      <DependentUpon>Dialogo_cambiodenumero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\Dialogo_cambiodenumero.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogos\Dialogo_impresion.Designer.vb">
+      <DependentUpon>Dialogo_impresion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\Dialogo_impresion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogos\dialogo_login.Designer.vb">
+      <DependentUpon>dialogo_login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\dialogo_login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogos\Dialogo_Solicitarnumero.Designer.vb">
+      <DependentUpon>Dialogo_Solicitarnumero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\Dialogo_Solicitarnumero.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogos\Tesoreria_retencionesv2.Designer.vb">
+      <DependentUpon>Tesoreria_retencionesv2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\Tesoreria_retencionesv2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogos\Tesoreria_Control_Retenciones.Designer.vb">
+      <DependentUpon>Tesoreria_Control_Retenciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\Tesoreria_Control_Retenciones.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Clases\regproeedores.vb" />
+    <Compile Include="Clases\Safi_webform.vb" />
+    <Compile Include="Clases\Tesoreriageneral_webform.vb" />
+    <Compile Include="Clases\TesoreriaGralPedidoFondo.vb" />
+    <Compile Include="Forms\Tesoreria\Tesoreria_Dialogoretenciones.Designer.vb">
+      <DependentUpon>Tesoreria_Dialogoretenciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tesoreria\Tesoreria_Dialogoretenciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogos\Dialogo_Datagridview.Designer.vb">
+      <DependentUpon>Dialogo_Datagridview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\Dialogo_Datagridview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogos\Dialogo_listbox.Designer.vb">
+      <DependentUpon>Dialogo_listbox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\Dialogo_listbox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogos\Dialogo_ModificarDatatable.Designer.vb">
+      <DependentUpon>Dialogo_ModificarDatatable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\Dialogo_ModificarDatatable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogos\Dialog_fecha.Designer.vb">
+      <DependentUpon>Dialog_fecha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\Dialog_fecha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Direccion\Direccion_reportes.Designer.vb">
+      <DependentUpon>Direccion_reportes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Direccion\Direccion_reportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Contabilidad\Contabilidad_Expedientes.Designer.vb">
+      <DependentUpon>Contabilidad_Expedientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Contabilidad\Contabilidad_Expedientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clases\Impresion.vb" />
+    <Compile Include="Clases\Contabilidad.vb" />
+    <Compile Include="Dialogos\Contabilidad_DialogoOrdenPago.Designer.vb">
+      <DependentUpon>Contabilidad_DialogoOrdenPago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\Contabilidad_DialogoOrdenPago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Suministros\Suministros_listadoordenesprovision.Designer.vb">
+      <DependentUpon>Suministros_listadoordenesprovision.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Suministros\Suministros_listadoordenesprovision.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Contabilidad\Contabilidad_listadoordenespago.Designer.vb">
+      <DependentUpon>Contabilidad_listadoordenespago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Contabilidad\Contabilidad_listadoordenespago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Suministros\Suministros_expedientes.Designer.vb">
+      <DependentUpon>Suministros_expedientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Suministros\Suministros_expedientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clases\TesGral.vb" />
+    <Compile Include="Forms\Tesoreria\Tesoreria_agregarcheques.Designer.vb">
+      <DependentUpon>Tesoreria_agregarcheques.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tesoreria\Tesoreria_agregarcheques.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tesoreria\Tesoreria_cheques_listado.Designer.vb">
+      <DependentUpon>Tesoreria_cheques_listado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tesoreria\Tesoreria_cheques_listado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clases\Informatica_Backup.vb" />
+    <Compile Include="Clases\Personal.vb" />
+    <Compile Include="Forms\Generales\Personal_Personal.Designer.vb">
+      <DependentUpon>Personal_Personal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Generales\Personal_Personal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Generales\Splash_screen.Designer.vb">
+      <DependentUpon>Splash_screen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Generales\Splash_screen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Dialogos\Suministros-DialogoOrdenProvision.Designer.vb">
+      <DependentUpon>Suministros-DialogoOrdenProvision.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\Suministros-DialogoOrdenProvision.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tesoreria\Tesoreria-Conciliacion2.Designer.vb">
+      <DependentUpon>Tesoreria-Conciliacion2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tesoreria\Tesoreria-Conciliacion2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tesoreria\Tesoreria-Retenciones.Designer.vb">
+      <DependentUpon>Tesoreria-Retenciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tesoreria\Tesoreria-Retenciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tesoreria\Tesoreria_AjustesMFyV.Designer.vb">
+      <DependentUpon>Tesoreria_AjustesMFyV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tesoreria\Tesoreria_AjustesMFyV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tesoreria\Tesoreria_recibos_retenciones.Designer.vb">
+      <DependentUpon>Tesoreria_recibos_retenciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tesoreria\Tesoreria_recibos_retenciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles\Textboxextended_mero.Designer.vb">
+      <DependentUpon>Textboxextended_mero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Textboxextended_mero.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Tesoreria\Tesoreria-Conciliacion_Bancaria.Designer.vb">
+      <DependentUpon>Tesoreria-Conciliacion_Bancaria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tesoreria\Tesoreria-Conciliacion_Bancaria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Generales\CUIT_agregarnuevo.Designer.vb">
+      <DependentUpon>CUIT_agregarnuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Generales\CUIT_agregarnuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Generales\CUIT_expedientes.Designer.vb">
+      <DependentUpon>CUIT_expedientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Generales\CUIT_expedientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Generales\debugger.Designer.vb">
+      <DependentUpon>debugger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Generales\debugger.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogos\Dialogo_datos.Designer.vb">
+      <DependentUpon>Dialogo_datos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\Dialogo_datos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogos\Dialogo_Movimientoscambio.Designer.vb">
+      <DependentUpon>Dialogo_Movimientoscambio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\Dialogo_Movimientoscambio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogos\Dialogo_Nuevoexpediente.Designer.vb">
+      <DependentUpon>Dialogo_Nuevoexpediente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\Dialogo_Nuevoexpediente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogos\Dialogo_nuevopedidofondo.Designer.vb">
+      <DependentUpon>Dialogo_nuevopedidofondo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\Dialogo_nuevopedidofondo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Generales\Informatica_Servidor.Designer.vb">
+      <DependentUpon>Informatica_Servidor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Generales\Informatica_Servidor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Generales\Informe_OrdenCargo.Designer.vb">
+      <DependentUpon>Informe_OrdenCargo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Generales\Informe_OrdenCargo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Generales\Informe_Ordendepago.Designer.vb">
+      <DependentUpon>Informe_Ordendepago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Generales\Informe_Ordendepago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Generales\MesadeEntradas_expedientes.Designer.vb">
+      <DependentUpon>MesadeEntradas_expedientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Generales\MesadeEntradas_expedientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles\Control_currency_textboxWPF.xaml.vb">
+      <DependentUpon>Control_currency_textboxWPF.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tesoreria\Cuentabancaria.Designer.vb">
+      <DependentUpon>Cuentabancaria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tesoreria\Cuentabancaria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clases\Datagridextensions.vb" />
+    <Compile Include="Forms\Generales\Informatica_Servicioadministrativo.Designer.vb">
+      <DependentUpon>Informatica_Servicioadministrativo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Generales\Informatica_Servicioadministrativo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tesoreria\Tesoreria_Expedientes.Designer.vb">
+      <DependentUpon>Tesoreria_Expedientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tesoreria\Tesoreria_Expedientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clases\Update.vb" />
+    <Compile Include="Forms\Generales\Usuario_manejodeusuarios.Designer.vb">
+      <DependentUpon>Usuario_manejodeusuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Generales\Usuario_manejodeusuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogos\Dialogo_CUIT.Designer.vb">
+      <DependentUpon>Dialogo_CUIT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogos\Dialogo_CUIT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tesoreria\Tesoreria_Informe_conciliacion.Designer.vb">
+      <DependentUpon>Tesoreria_Informe_conciliacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tesoreria\Tesoreria_Informe_conciliacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Generales\Informe_expedientes.Designer.vb">
+      <DependentUpon>Informe_expedientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Generales\Informe_expedientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tesoreria\Tesoreria_Informe_pedidofondos.Designer.vb">
+      <DependentUpon>Tesoreria_Informe_pedidofondos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tesoreria\Tesoreria_Informe_pedidofondos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tesoreria\Tesoreria_Movimientos.Designer.vb">
+      <DependentUpon>Tesoreria_Movimientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tesoreria\Tesoreria_Movimientos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Generales\Inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Generales\Inicio.Designer.vb">
+      <DependentUpon>Inicio.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tesoreria\Retenciones.Designer.vb">
+      <DependentUpon>Retenciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tesoreria\Retenciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Generales\Formulario_Login-01.Designer.vb">
+      <DependentUpon>Formulario_Login-01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Generales\Formulario_Login-01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clases\ModulosGrales.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Forms\Generales\Usuarios_nuevousuario.Designer.vb">
+      <DependentUpon>Usuarios_nuevousuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Generales\Usuarios_nuevousuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tesoreria\Tesoreria_Pedidofondos.Designer.vb">
+      <DependentUpon>Tesoreria_Pedidofondos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tesoreria\Tesoreria_Pedidofondos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Generales\Presentacion.Designer.vb">
+      <DependentUpon>Presentacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Generales\Presentacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tesoreria\Tesoreria_Rendiciones.Designer.vb">
+      <DependentUpon>Tesoreria_Rendiciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tesoreria\Tesoreria_Rendiciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tesoreria\Tesoreria_Reportes.Designer.vb">
+      <DependentUpon>Tesoreria_Reportes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tesoreria\Tesoreria_Reportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dialogos\Contabilidad_DialogoHaberes.resx">
+      <DependentUpon>Contabilidad_DialogoHaberes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\Contabilidad_DialogoOrdenpago_multiple.resx">
+      <DependentUpon>Contabilidad_DialogoOrdenpago_multiple.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\Contabilidad_DialogoContratos.resx">
+      <DependentUpon>Contabilidad_DialogoContratos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Control_Movimiento_MFyV.resx">
+      <DependentUpon>Control_Movimiento_MFyV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Generales\CUIT_Movimientos.resx">
+      <DependentUpon>CUIT_Movimientos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\Dialogo_cambiodenumero.resx">
+      <DependentUpon>Dialogo_cambiodenumero.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\Dialogo_impresion.resx">
+      <DependentUpon>Dialogo_impresion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\dialogo_login.resx">
+      <DependentUpon>dialogo_login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\Dialogo_Solicitarnumero.resx">
+      <DependentUpon>Dialogo_Solicitarnumero.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\Tesoreria_retencionesv2.resx">
+      <DependentUpon>Tesoreria_retencionesv2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\Tesoreria_Control_Retenciones.resx">
+      <DependentUpon>Tesoreria_Control_Retenciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tesoreria\Tesoreria_Dialogoretenciones.resx">
+      <DependentUpon>Tesoreria_Dialogoretenciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\Dialogo_Datagridview.resx">
+      <DependentUpon>Dialogo_Datagridview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\Dialogo_listbox.resx">
+      <DependentUpon>Dialogo_listbox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\Dialogo_ModificarDatatable.resx">
+      <DependentUpon>Dialogo_ModificarDatatable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\Dialog_fecha.resx">
+      <DependentUpon>Dialog_fecha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Direccion\Direccion_reportes.resx">
+      <DependentUpon>Direccion_reportes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Contabilidad\Contabilidad_Expedientes.resx">
+      <DependentUpon>Contabilidad_Expedientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\Contabilidad_DialogoOrdenPago.resx">
+      <DependentUpon>Contabilidad_DialogoOrdenPago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Suministros\Suministros_listadoordenesprovision.resx">
+      <DependentUpon>Suministros_listadoordenesprovision.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Contabilidad\Contabilidad_listadoordenespago.resx">
+      <DependentUpon>Contabilidad_listadoordenespago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Suministros\Suministros_expedientes.resx">
+      <DependentUpon>Suministros_expedientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tesoreria\Tesoreria_agregarcheques.resx">
+      <DependentUpon>Tesoreria_agregarcheques.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tesoreria\Tesoreria_cheques_listado.resx">
+      <DependentUpon>Tesoreria_cheques_listado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Generales\Splash_screen.resx">
+      <DependentUpon>Splash_screen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Generales\CUIT_agregarnuevo.resx">
+      <DependentUpon>CUIT_agregarnuevo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Generales\CUIT_expedientes.resx">
+      <DependentUpon>CUIT_expedientes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Generales\debugger.resx">
+      <DependentUpon>debugger.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\Dialogo_datos.resx">
+      <DependentUpon>Dialogo_datos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\Dialogo_Movimientoscambio.resx">
+      <DependentUpon>Dialogo_Movimientoscambio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\Dialogo_Nuevoexpediente.resx">
+      <DependentUpon>Dialogo_Nuevoexpediente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\Dialogo_nuevopedidofondo.resx">
+      <DependentUpon>Dialogo_nuevopedidofondo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Generales\Informatica_Servidor.resx">
+      <DependentUpon>Informatica_Servidor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Generales\Informe_OrdenCargo.resx">
+      <DependentUpon>Informe_OrdenCargo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Generales\Informe_Ordendepago.resx">
+      <DependentUpon>Informe_Ordendepago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Generales\MesadeEntradas_expedientes.resx">
+      <DependentUpon>MesadeEntradas_expedientes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\Suministros-DialogoOrdenProvision.resx">
+      <DependentUpon>Suministros-DialogoOrdenProvision.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tesoreria\Tesoreria-Conciliacion2.resx">
+      <DependentUpon>Tesoreria-Conciliacion2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tesoreria\Tesoreria-Retenciones.resx">
+      <DependentUpon>Tesoreria-Retenciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tesoreria\Tesoreria_AjustesMFyV.resx">
+      <DependentUpon>Tesoreria_AjustesMFyV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tesoreria\Tesoreria_recibos_retenciones.resx">
+      <DependentUpon>Tesoreria_recibos_retenciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tesoreria\Tesoreria-Conciliacion_Bancaria.resx">
+      <DependentUpon>Tesoreria-Conciliacion_Bancaria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tesoreria\Cuentabancaria.resx">
+      <DependentUpon>Cuentabancaria.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Generales\Informatica_Servicioadministrativo.resx">
+      <DependentUpon>Informatica_Servicioadministrativo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tesoreria\Tesoreria_Expedientes.resx">
+      <DependentUpon>Tesoreria_Expedientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Generales\Usuario_manejodeusuarios.resx">
+      <DependentUpon>Usuario_manejodeusuarios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogos\Dialogo_CUIT.resx">
+      <DependentUpon>Dialogo_CUIT.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tesoreria\Tesoreria_Informe_conciliacion.resx">
+      <DependentUpon>Tesoreria_Informe_conciliacion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Generales\Informe_expedientes.resx">
+      <DependentUpon>Informe_expedientes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tesoreria\Tesoreria_Informe_pedidofondos.resx">
+      <DependentUpon>Tesoreria_Informe_pedidofondos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tesoreria\Tesoreria_Movimientos.resx">
+      <DependentUpon>Tesoreria_Movimientos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Generales\Inicio.resx">
+      <DependentUpon>Inicio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tesoreria\Retenciones.resx">
+      <DependentUpon>Retenciones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Generales\Formulario_Login-01.resx">
+      <DependentUpon>Formulario_Login-01.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Generales\Usuarios_nuevousuario.resx">
+      <DependentUpon>Usuarios_nuevousuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tesoreria\Tesoreria_Pedidofondos.resx">
+      <DependentUpon>Tesoreria_Pedidofondos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Generales\Presentacion.resx">
+      <DependentUpon>Presentacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tesoreria\Tesoreria_Rendiciones.resx">
+      <DependentUpon>Tesoreria_Rendiciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tesoreria\Tesoreria_Reportes.resx">
+      <DependentUpon>Tesoreria_Reportes.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".editorconfig" />
+    <None Include="Connected Services\AFIP.HOMO\LoginCms.wsdl" />
+    <None Include="Connected Services\AFIP.HOMO\SICyF.AFIP.HOMO.loginCmsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\996914929560673584-64.ico" />
+    <None Include="Resources\contaduria logo vect.ico" />
+    <None Include="Resources\contaduria2020.ico" />
+    <None Include="Resources\TRABAJANDO2.png" />
+    <None Include="Resources\Logo_CG.png" />
+    <None Include="Connected Services\AFIP.HOMO\configuration91.svcinfo" />
+    <None Include="Connected Services\AFIP.HOMO\configuration.svcinfo" />
+    <None Include="Connected Services\AFIP.HOMO\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <Content Include="Resources\contaduria.ico" />
+    <Content Include="Resources\Logo_CG2018chico.ico" />
+    <None Include="Resources\ic_receipt_white.png" />
+    <None Include="Resources\preloading.gif" />
+    <None Include="Resources\Logo_CG2018QR.png" />
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\loading6_230x230-cooler.gif" />
+    <None Include="Resources\TrabajandoGid.gif" />
+    <Resource Include="Resources\logo_DGR.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\logo_afip.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <None Include="Resources\LOGO a02.png" />
+    <Resource Include="Resources\lock_closed.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <None Include="Resources\info.png" />
+    <None Include="Resources\hand_thumbsup.png" />
+    <None Include="Resources\currency_dollar_sign.png" />
+    <Resource Include="Resources\cross.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\close.png" />
+    <None Include="Resources\circled_equal.png" />
+    <Resource Include="Resources\checkmark.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <None Include="Resources\checkbox_cross.png" />
+    <None Include="Resources\checkbox_circle.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\withdrawal.png" />
+    <None Include="Resources\wire_transfer.png" />
+    <None Include="Resources\width.png" />
+    <None Include="Resources\weight2.png" />
+    <None Include="Resources\weight.png" />
+    <None Include="Resources\warehouse.png" />
+    <None Include="Resources\wallet2.png" />
+    <None Include="Resources\visa.png" />
+    <None Include="Resources\treasure_chest.png" />
+    <None Include="Resources\tax.png" />
+    <None Include="Resources\stamped_document.png" />
+    <None Include="Resources\stamp.png" />
+    <None Include="Resources\silver.png" />
+    <None Include="Resources\shopping_cart.png" />
+    <None Include="Resources\shopping_basket.png" />
+    <None Include="Resources\send_package.png" />
+    <None Include="Resources\send_envelope.png" />
+    <None Include="Resources\send_crate.png" />
+    <None Include="Resources\send_container.png" />
+    <None Include="Resources\send_box.png" />
+    <None Include="Resources\salary.png" />
+    <None Include="Resources\safety_box_open.png" />
+    <None Include="Resources\safety_box.png" />
+    <None Include="Resources\refund.png" />
+    <None Include="Resources\raw_material.png" />
+    <None Include="Resources\purse.png" />
+    <None Include="Resources\purchase.png" />
+    <None Include="Resources\product_in_progress3.png" />
+    <None Include="Resources\product_in_progress2.png" />
+    <None Include="Resources\product_in_progress1.png" />
+    <None Include="Resources\product_in_progress0.png" />
+    <None Include="Resources\product.png" />
+    <None Include="Resources\plane.png" />
+    <None Include="Resources\piggybank.png" />
+    <None Include="Resources\payment.png" />
+    <None Include="Resources\operator2.png" />
+    <None Include="Resources\money_bag.png" />
+    <None Include="Resources\mastercard.png" />
+    <None Include="Resources\location.png" />
+    <None Include="Resources\loan.png" />
+    <None Include="Resources\invoice.png" />
+    <None Include="Resources\inventory_category2.png" />
+    <None Include="Resources\inventory_category.png" />
+    <None Include="Resources\inventory.png" />
+    <None Include="Resources\height.png" />
+    <None Include="Resources\hand_handshake.png" />
+    <None Include="Resources\gold.png" />
+    <None Include="Resources\general_bank2.png" />
+    <None Include="Resources\general_bank.png" />
+    <None Include="Resources\general_atm.png" />
+    <None Include="Resources\fingerprint_reader2.png" />
+    <None Include="Resources\fingerprint_reader.png" />
+    <None Include="Resources\fingerprint2.png" />
+    <None Include="Resources\fingerprint.png" />
+    <None Include="Resources\factory.png" />
+    <None Include="Resources\mail.png" />
+    <None Include="Resources\dispatch_order.png" />
+    <None Include="Resources\dispatch.png" />
+    <None Include="Resources\dimensions.png" />
+    <None Include="Resources\deposit.png" />
+    <None Include="Resources\debt.png" />
+    <None Include="Resources\currency_yuan_sign.png" />
+    <None Include="Resources\currency_yen_sign2.png" />
+    <None Include="Resources\currency_yen_sign.png" />
+    <None Include="Resources\currency_rupee_sign.png" />
+    <None Include="Resources\currency_ruble_sign.png" />
+    <None Include="Resources\currency_rial_sign.png" />
+    <None Include="Resources\currency_pound_sign.png" />
+    <None Include="Resources\currency_peso_sign.png" />
+    <None Include="Resources\currency_euro_sign.png" />
+    <None Include="Resources\currency_dollar_sign2.png" />
+    <None Include="Resources\currency_dinar_sign.png" />
+    <None Include="Resources\currency_denar_sign.png" />
+    <None Include="Resources\currency_baht_sign.png" />
+    <None Include="Resources\currency_sign.png" />
+    <None Include="Resources\credit_card.png" />
+    <None Include="Resources\company2.png" />
+    <None Include="Resources\company.png" />
+    <None Include="Resources\coin_yen.png" />
+    <None Include="Resources\coin_silhouette.png" />
+    <None Include="Resources\coin_pound.png" />
+    <None Include="Resources\coin_luck.png" />
+    <None Include="Resources\coin_euro.png" />
+    <None Include="Resources\coin_dollar.png" />
+    <None Include="Resources\coinstack.png" />
+    <None Include="Resources\coin2.png" />
+    <None Include="Resources\coin.png" />
+    <None Include="Resources\check.png" />
+    <None Include="Resources\catalogue.png" />
+    <None Include="Resources\cashbox.png" />
+    <None Include="Resources\brochure.png" />
+    <None Include="Resources\bill.png" />
+    <None Include="Resources\barcode.png" />
+    <None Include="Resources\bank_yen2.png" />
+    <None Include="Resources\bank_yen.png" />
+    <None Include="Resources\bank_transaction.png" />
+    <None Include="Resources\bank_pound2.png" />
+    <None Include="Resources\bank_pound.png" />
+    <None Include="Resources\bank_euro2.png" />
+    <None Include="Resources\bank_euro.png" />
+    <None Include="Resources\bank2.png" />
+    <None Include="Resources\bank.png" />
+    <None Include="Resources\balance.png" />
+    <None Include="Resources\atm_yen.png" />
+    <None Include="Resources\atm_pound.png" />
+    <None Include="Resources\atm_euro.png" />
+    <None Include="Resources\atm.png" />
+    <None Include="Resources\abacus.png" />
+    <None Include="Resources\ic_wrap_text_white_48dp.ico" />
+    <None Include="Resources\ic_border_inner_black_36dp.ico" />
+    <None Include="Resources\ic_border_inner_black_24dp.ico" />
+    <None Include="Resources\ic_border_inner_black_18dp.ico" />
+    <None Include="Resources\ic_border_horizontal_white_48dp.ico" />
+    <None Include="Resources\ic_border_horizontal_white_36dp.ico" />
+    <None Include="Resources\ic_border_horizontal_white_24dp.ico" />
+    <None Include="Resources\ic_border_horizontal_white_18dp.ico" />
+    <None Include="Resources\ic_border_horizontal_black_48dp.ico" />
+    <None Include="Resources\ic_border_horizontal_black_36dp.ico" />
+    <None Include="Resources\ic_border_horizontal_black_24dp.ico" />
+    <None Include="Resources\ic_border_horizontal_black_18dp.ico" />
+    <None Include="Resources\ic_border_color_white_48dp.ico" />
+    <None Include="Resources\ic_border_color_white_36dp.ico" />
+    <None Include="Resources\ic_border_color_white_24dp.ico" />
+    <None Include="Resources\ic_border_color_white_18dp.ico" />
+    <None Include="Resources\ic_border_color_black_48dp.ico" />
+    <None Include="Resources\ic_border_color_black_36dp.ico" />
+    <None Include="Resources\ic_border_color_black_24dp.ico" />
+    <None Include="Resources\ic_border_color_black_18dp.ico" />
+    <None Include="Resources\ic_border_clear_white_48dp.ico" />
+    <None Include="Resources\ic_border_clear_white_36dp.ico" />
+    <None Include="Resources\ic_border_clear_white_24dp.ico" />
+    <None Include="Resources\ic_border_clear_white_18dp.ico" />
+    <None Include="Resources\ic_border_clear_black_48dp.ico" />
+    <None Include="Resources\ic_border_clear_black_36dp.ico" />
+    <None Include="Resources\ic_border_clear_black_24dp.ico" />
+    <None Include="Resources\ic_border_clear_black_18dp.ico" />
+    <None Include="Resources\ic_border_bottom_white_48dp.ico" />
+    <None Include="Resources\ic_border_bottom_white_36dp.ico" />
+    <None Include="Resources\ic_border_bottom_white_24dp.ico" />
+    <None Include="Resources\ic_border_bottom_white_18dp.ico" />
+    <None Include="Resources\ic_border_bottom_black_48dp.ico" />
+    <None Include="Resources\ic_border_bottom_black_36dp.ico" />
+    <None Include="Resources\ic_border_bottom_black_24dp.ico" />
+    <None Include="Resources\ic_border_bottom_black_18dp.ico" />
+    <None Include="Resources\ic_border_all_white_48dp.ico" />
+    <None Include="Resources\ic_border_all_white_36dp.ico" />
+    <None Include="Resources\ic_border_all_white_24dp.ico" />
+    <None Include="Resources\ic_border_all_white_18dp.ico" />
+    <None Include="Resources\ic_border_all_black_48dp.ico" />
+    <None Include="Resources\ic_border_all_black_36dp.ico" />
+    <None Include="Resources\ic_border_all_black_24dp.ico" />
+    <None Include="Resources\ic_border_all_black_18dp.ico" />
+    <None Include="Resources\ic_attach_money_white_48dp.ico" />
+    <None Include="Resources\ic_attach_money_white_36dp.ico" />
+    <None Include="Resources\ic_attach_money_white_24dp.ico" />
+    <None Include="Resources\ic_attach_money_white_18dp.ico" />
+    <None Include="Resources\ic_attach_money_black_48dp.ico" />
+    <None Include="Resources\ic_attach_money_black_36dp.ico" />
+    <None Include="Resources\ic_attach_money_black_24dp.ico" />
+    <None Include="Resources\ic_attach_money_black_18dp.ico" />
+    <None Include="Resources\ic_attach_file_white_48dp.ico" />
+    <None Include="Resources\ic_attach_file_white_36dp.ico" />
+    <None Include="Resources\ic_attach_file_white_24dp.ico" />
+    <None Include="Resources\ic_attach_file_white_18dp.ico" />
+    <None Include="Resources\ic_attach_file_black_48dp.ico" />
+    <None Include="Resources\ic_attach_file_black_36dp.ico" />
+    <None Include="Resources\ic_attach_file_black_24dp.ico" />
+    <None Include="Resources\ic_attach_file_black_18dp.ico" />
+    <None Include="Resources\ic_send_black_48dp.png" />
+    <None Include="Resources\ic_send_black_36dp.png" />
+    <None Include="Resources\ic_send_black_24dp.png" />
+    <None Include="Resources\ic_send_black_18dp.png" />
+    <None Include="Resources\ic_report_black_48dp.png" />
+    <None Include="Resources\ic_report_black_36dp.png" />
+    <None Include="Resources\ic_report_black_24dp.png" />
+    <None Include="Resources\ic_report_black_18dp.png" />
+    <None Include="Resources\ic_font_download_black_48dp.png" />
+    <None Include="Resources\ic_font_download_black_36dp.png" />
+    <None Include="Resources\ic_font_download_black_24dp.png" />
+    <None Include="Resources\ic_font_download_black_18dp.png" />
+    <None Include="Resources\ic_delete_sweep_black_48dp.png" />
+    <None Include="Resources\ic_delete_sweep_black_36dp.png" />
+    <None Include="Resources\ic_delete_sweep_black_24dp.png" />
+    <None Include="Resources\ic_delete_sweep_black_18dp.png" />
+    <None Include="Resources\ic_create_black_48dp.png" />
+    <None Include="Resources\ic_create_black_36dp.png" />
+    <None Include="Resources\ic_create_black_24dp.png" />
+    <None Include="Resources\ic_create_black_18dp.png" />
+    <None Include="Resources\ic_content_paste_black_48dp.png" />
+    <None Include="Resources\ic_content_paste_black_36dp.png" />
+    <None Include="Resources\ic_content_paste_black_24dp.png" />
+    <None Include="Resources\ic_content_paste_black_18dp.png" />
+    <None Include="Resources\ic_content_copy_black_48dp.png" />
+    <None Include="Resources\ic_content_copy_black_36dp.png" />
+    <None Include="Resources\ic_content_copy_black_24dp.png" />
+    <None Include="Resources\ic_content_copy_black_18dp.png" />
+    <None Include="Resources\ic_archive_white_48dp.png" />
+    <None Include="Resources\ic_archive_white_36dp.png" />
+    <None Include="Resources\ic_archive_white_24dp.png" />
+    <None Include="Resources\ic_archive_white_18dp.png" />
+    <None Include="Resources\ic_archive_black_48dp.png" />
+    <None Include="Resources\ic_archive_black_36dp.png" />
+    <None Include="Resources\ic_archive_black_24dp.png" />
+    <None Include="Resources\ic_archive_black_18dp.png" />
+    <None Include="Resources\ic_add_white_48dp.png" />
+    <None Include="Resources\ic_add_white_36dp.png" />
+    <None Include="Resources\ic_add_white_24dp.png" />
+    <None Include="Resources\ic_add_white_18dp.png" />
+    <None Include="Resources\ic_add_circle_white_48dp.png" />
+    <None Include="Resources\ic_add_circle_white_36dp.png" />
+    <None Include="Resources\ic_add_circle_white_24dp.png" />
+    <None Include="Resources\ic_add_circle_white_18dp.png" />
+    <None Include="Resources\ic_add_circle_outline_white_48dp.png" />
+    <None Include="Resources\ic_add_circle_outline_white_36dp.png" />
+    <None Include="Resources\ic_add_circle_outline_white_24dp.png" />
+    <None Include="Resources\ic_add_circle_outline_white_18dp.png" />
+    <None Include="Resources\ic_add_circle_outline_black_48dp.png" />
+    <None Include="Resources\ic_add_circle_outline_black_36dp.png" />
+    <None Include="Resources\ic_add_circle_outline_black_24dp.png" />
+    <None Include="Resources\ic_add_circle_outline_black_18dp.png" />
+    <None Include="Resources\ic_add_circle_black_48dp.png" />
+    <None Include="Resources\ic_add_circle_black_36dp.png" />
+    <None Include="Resources\ic_add_circle_black_24dp.png" />
+    <None Include="Resources\ic_add_circle_black_18dp.png" />
+    <None Include="Resources\ic_add_box_white_48dp.png" />
+    <None Include="Resources\ic_add_box_white_36dp.png" />
+    <None Include="Resources\ic_add_box_white_24dp.png" />
+    <None Include="Resources\ic_add_box_white_18dp.png" />
+    <None Include="Resources\ic_add_box_black_48dp.png" />
+    <None Include="Resources\ic_add_box_black_36dp.png" />
+    <None Include="Resources\ic_add_box_black_24dp.png" />
+    <None Include="Resources\ic_add_box_black_18dp.png" />
+    <None Include="Resources\ic_add_black_48dp.png" />
+    <None Include="Resources\ic_add_black_36dp.png" />
+    <None Include="Resources\ic_add_black_24dp.png" />
+    <None Include="Resources\ic_add_black_18dp.png" />
+    <None Include="Resources\ic_mail_outline_black_48dp.png" />
+    <None Include="Resources\ic_mail_outline_black_36dp.png" />
+    <None Include="Resources\ic_mail_outline_black_24dp.png" />
+    <None Include="Resources\ic_mail_outline_black_18dp.png" />
+    <None Include="Resources\ic_import_export_black_48dp.png" />
+    <None Include="Resources\ic_import_export_black_36dp.png" />
+    <None Include="Resources\ic_import_export_black_24dp.png" />
+    <None Include="Resources\ic_import_export_black_18dp.png" />
+    <None Include="Resources\ic_import_contacts_black_48dp.png" />
+    <None Include="Resources\ic_import_contacts_black_36dp.png" />
+    <None Include="Resources\ic_import_contacts_black_24dp.png" />
+    <None Include="Resources\ic_import_contacts_black_18dp.png" />
+    <None Include="Resources\ic_email_black_48dp.png" />
+    <None Include="Resources\ic_email_black_36dp.png" />
+    <None Include="Resources\ic_email_black_24dp.png" />
+    <None Include="Resources\ic_email_black_18dp.png" />
+    <None Include="Resources\ic_email_black_12dp.png" />
+    <None Include="Resources\ic_chat_bubble_outline_black_48dp.png" />
+    <None Include="Resources\ic_chat_bubble_outline_black_36dp.png" />
+    <None Include="Resources\ic_chat_bubble_outline_black_24dp.png" />
+    <None Include="Resources\ic_chat_bubble_outline_black_18dp.png" />
+    <None Include="Resources\ic_chat_bubble_black_36dp.png" />
+    <None Include="Resources\ic_chat_bubble_black_24dp.png" />
+    <None Include="Resources\ic_chat_bubble_black_18dp.png" />
+    <None Include="Resources\ic_chat_black_48dp.png" />
+    <None Include="Resources\ic_chat_black_36dp.png" />
+    <None Include="Resources\ic_chat_black_24dp.png" />
+    <None Include="Resources\ic_chat_black_18dp.png" />
+    <None Include="Resources\TRABAJANDOsmall.png" />
+    <None Include="Resources\TRABAJANDO.png" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\Logo_CG2018mediano.png" />
+    <None Include="Resources\Logo_CG2018grande.png" />
+    <None Include="Resources\Logo_CG2018chico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Controles\Control_currency_textboxWPF.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\vb\Humanizer.dll" />
+    <Analyzer Include="..\packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\vb\Microsoft.CodeQuality.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\vb\Microsoft.CodeQuality.VisualBasic.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\AFIP.HOMO\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SICyFC\SICyFC.csproj">
+      <Project>{7a9a68f9-8918-4669-8236-77bc8baa89ef}</Project>
+      <Name>SICyFC</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Configuration\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeQuality.Analyzers.2.9.8\build\Microsoft.CodeQuality.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeQuality.Analyzers.2.9.8\build\Microsoft.CodeQuality.Analyzers.props'))" />
+    <Error Condition="!Exists('..\packages\squirrel.windows.2.0.1\build\squirrel.windows.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\squirrel.windows.2.0.1\build\squirrel.windows.props'))" />
+    <Error Condition="!Exists('..\packages\Selenium.WebDriver.ChromeDriver.87.0.4280.2000\build\Selenium.WebDriver.ChromeDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.WebDriver.ChromeDriver.87.0.4280.2000\build\Selenium.WebDriver.ChromeDriver.targets'))" />
+  </Target>
+  <Import Project="..\packages\Selenium.WebDriver.ChromeDriver.87.0.4280.2000\build\Selenium.WebDriver.ChromeDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.ChromeDriver.87.0.4280.2000\build\Selenium.WebDriver.ChromeDriver.targets')" />
+</Project>
